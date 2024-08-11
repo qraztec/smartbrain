@@ -133,19 +133,19 @@ function App() {
 
   function Reset() {
   
-    setInput('')
-    setURL('')
-    setBoxes([])
-    setRoute('signin')
-    setSign(false)
-    setEntries(0)
-    setUser({
-      id: '',
-      name: '',
-      email: '',
-      joined: ''
-    })
-  }
+  setInput('')
+  setURL('')
+  setBoxes([])
+  setRoute('signin')
+  setSign(false)
+  setEntries(0)
+  setUser({
+    id: '',
+    name: '',
+    email: '',
+    joined: ''
+  })
+}
   
   const loadUser = (data) => {
     
@@ -219,7 +219,7 @@ function App() {
       .then(result => {
         
         
-          fetch('http://localhost:3000/image', {
+          fetch('https://smartbrain-backend-n6va.onrender.com/image', {
             method: 'put',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
